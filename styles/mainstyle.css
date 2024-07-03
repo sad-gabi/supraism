@@ -1,0 +1,253 @@
+:root {
+    --main-color: #090909;
+    --text-color: #FFF4E3;
+
+    --main-font: CinzelDecorative;
+    --main-font-bold: CinzelDecorativeBold;
+    --second-font: Cinzel;
+    --third-font: YuGothic;
+
+    --fill-available: -webkit-fill-available;
+}
+
+
+
+
+@font-face {
+    font-family: CinzelDecorative;
+    src: url(../fonts/CinzelDecorative-Regular.ttf);
+}
+
+@font-face {
+    font-family: CinzelDecorativeBold;
+    src: url(../fonts/CinzelDecorative-Bold.ttf);
+}
+
+@font-face {
+    font-family: Cinzel;
+    src: url(../fonts/Cinzel-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: YuGothic;
+    src: url(../fonts/YuGothR.ttc);
+}
+
+
+* {
+    position: relative;
+}
+
+html {
+    width: var(--fill-available);
+    display: block;
+    margin: 0;
+    background-color: var(--main-color);
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: var(--fill-available);
+}
+
+
+
+.headerImg {
+    height: 220px;
+}
+
+.headBarContainer {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    width: var(--fill-available);
+}
+
+.headBarContainer a {
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: var(--second-font);
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.headBarContainer a:hover {
+    color: white;
+    scale: 1.1;
+}
+
+.headBarContainer a:focus {
+    color: white;
+    scale: 1.1;
+    outline: 1px solid #FFF4E390;
+    outline-offset: 5px;
+}
+
+.sectionContainerB {
+    display: flex;
+    justify-content: center;
+    width: var(--fill-available);
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+.sectionContainerW {
+    display: flex;
+    justify-content: center;
+    width: var(--fill-available);
+    padding: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+
+.section {
+    max-width: 1200px;
+    display: flex;
+    gap: 100px;
+}
+
+.section img {
+    min-width: 30%;
+    max-width: 30%;
+    width: 30%;
+}
+
+.sectionTextR {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: end;
+    flex-grow: 1;
+    text-align: end;
+}
+
+.sectionTextL {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-grow: 1;
+}
+
+.titles {
+    font-size: 32px;
+    font-family: var(--main-font-bold);
+}
+
+.text {
+    font-size: 24px;
+    font-family: var(--third-font);
+}
+
+
+
+#headerContainer1 {
+    display: flex;
+    width: var(--fill-available);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#headerContainer2 {
+    width: var(--fill-available);
+    height: var(--fill-available);
+    margin: 50px;
+    border: 1px solid var(--text-color);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: var(--fill-available);
+    height: var(--fill-available);
+    padding: 100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 1px solid var(--text-color);
+    border-radius: 370px;
+    overflow: hidden;
+}
+
+#headerTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: var(--fill-available);
+    height: 100%;
+    padding: 50px;
+    border: 1px solid var(--text-color);
+    border-top: none;
+    border-bottom: none;
+}
+
+#headerWelcome {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#headerWelcome1 {
+    font-size: 24px;
+    font-family: var(--second-font);
+}
+
+#headerWelcome2 {
+    font-size: 64px;
+    font-family: var(--main-font-bold);
+}
+
+#headerWelcome3 {
+    font-size: 40px;
+    font-family: var(--second-font);
+    font-weight: bold;
+}
+
+#headerQuote {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    border-left: none;
+    border-right: none;
+    font-size: 24px;
+    font-family: var(--second-font);
+    color: var(--text-color);
+}
+
+#headBar {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 80px;
+    width: var(--fill-available);
+    background-color: var(--main-color);
+    z-index: 900;
+}
+
+
+
+@media (max-width: 1415px) {
+    .headerImg {
+        display: none;
+    }
+
+
+
+    #header {
+        border-radius: 100px;
+    }
+}
