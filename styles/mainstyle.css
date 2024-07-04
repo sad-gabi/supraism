@@ -142,6 +142,7 @@ body {
 }
 
 .titles {
+    width: var(--fill-available);
     font-size: 32px;
     font-family: var(--main-font-bold);
 }
@@ -250,5 +251,26 @@ body {
 
     #header {
         border-radius: 100px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section img {
+        width: auto;
+        height: 500px;
+        max-width: none;
+    }
+
+    .sectionTextR {
+        text-align: center;
+    }
+    
+    .sectionTextL {
+        text-align: center;
     }
 }
