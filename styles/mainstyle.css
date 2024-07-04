@@ -157,7 +157,7 @@ body {
 #headerContainer1 {
     display: flex;
     width: var(--fill-available);
-    height: 100vh;
+    height: 100svh;
     overflow: hidden;
 }
 
